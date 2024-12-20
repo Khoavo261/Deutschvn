@@ -12,9 +12,9 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Awesome Docusaurus',
-  tagline: 'Dinosaurs thật tuyệt vời!',
-  favicon: 'img/favicon.ico',
+  title: 'Deutsch.vn',
+  tagline: 'Bọn mìh xây dựng cộng đồng tiếng đức ở đây',
+  favicon: 'img/avt.jpeg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -91,17 +91,29 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Awesome Docusaurus',
+        title: 'Deutsch.vn',
         logo: {
           alt: 'Awesome Docusaurus Logo',
-          src: 'img/logo.svg',
+          src: 'img/avt.jpeg',
         },
         items: [
           {
-            to: '/docs/intro',
+            to: '/docs/Deutsch',
             position: 'left',
-            label: 'Hướng dẫn',
-            activeBaseRegex: `/docs/intro`,
+            label: 'Tiếng Đức',
+            activeBaseRegex: `/docs/Deutsch`,
+          },
+          {
+            to: '/docs/Mathematik',
+            position: 'left',
+            label: 'Toán',
+            activeBaseRegex: `/docs/Mathematik`,
+          },
+          {
+            to: '/docs/Hoso',
+            position: 'left',
+            label: 'Hồ sơ du học áo',
+            activeBaseRegex: `/docs/hoso`,
           },
           {to: '/blog', 
             label: 'Blog', 
@@ -140,12 +152,6 @@ const config = {
             position: 'right',
             className: 'navbar-icon fab fa-facebook',
             'aria-label': 'Facebook',
-          },
-          {
-            href: 'https://m.me/mr.thinh.ueh',
-            position: 'right',
-            className: 'navbar-icon fab fa-facebook-messenger',
-            'aria-label': 'Messenger',
           },
         ],
       },
