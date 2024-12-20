@@ -26,14 +26,7 @@ npm install --save @docusaurus/theme-mermaid@3.6.0
 
 Mở file `docusaurus.config.js` trong thư mục gốc và thêm vào đoạn code sau:
 
-```jsx title="docusaurus.config.js"
-const config = {
-  markdown: {
-    mermaid: true,
-  },
-  themes: ['@docusaurus/theme-mermaid'],
-};
-```
+
 
 ## Tham khảo
 

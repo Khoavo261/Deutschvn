@@ -88,15 +88,6 @@ const config = {
       //   content: `🎉️ <b>Khai giảng khoá học Python chứng khoán K9 từ 8/12/2024 <a target="_blank" href="https://vnstocks.com/lp-khoa-hoc-python-chung-khoan/"></a></b>. Đăng ký ngay! 🥳️`,
       // },
 
-      announcementBar: {
-        id: 'image_banner', // Any value that will identify this message.
-        content:
-          '<a href="https://vnstocks.com/lp-khoa-hoc-python-chung-khoan"><img src="https://vnstocks.com/img/python_chung_khoan_banner.png" alt="Banner" class="announcement-bar-image" /></a>',
-        backgroundColor: '#fafbfc', // Defaults to `#fff`.
-        textColor: '#091E42', // Defaults to `#000`.
-        isCloseable: true, // Defaults to `true`.
-      },
-
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -123,10 +114,6 @@ const config = {
             activeBaseRegex: `/thu-vien-mau`,
             items: [
               {
-                to: '/demo/cards', 
-                label: 'Demo - Tất cả', 
-              },
-              {
                 to: '/demo/about', 
                 label: 'Demo - Về chúng tôi', 
               },
@@ -140,48 +127,16 @@ const config = {
               },
               {
                 to: '/markdown/page-with-subscribe-box', 
-                label: 'Demo - Đăng ký bản tin', 
-              },
-              {
-                to: '/markdown/image-popup', 
-                label: 'Demo - Popup ảnh', 
-              },
-              {
-                to: '/markdown/media-embeded', 
-                label: 'Demo - Nhúng Video, PDF, Notebook', 
-              },
-              {
-                to: '/demo/slider', 
-                label: 'Demo - Slider trình chiếu', 
-              },
-              {
-                to: '/demo/image-gallery', 
-                label: 'Demo - Thư viện ảnh', 
-              },
-              {
-              to: '/demo/testimonial', 
-              label: 'Demo - Testimonial - Chứng thực', 
-              },
-              {
-                to: '/markdown/page-with-subscribe-box', 
                 label: 'Trang Markdown & Subscribe', 
               },
               {
                 to: '/markdown/page-with-faq', 
                 label: 'Trang Markdown & FAQ', 
               },
-              {
-                to: '/demo/text-reveal', 
-                label: 'Demo - Cuộn chữ', 
-              },
-              {
-                to: '/docs/demo/', 
-                label: 'Nguồn cảm hứng', 
-              },
             ],
           },
           {
-            href: 'https://www.facebook.com/learn.anything.az/',
+            href: 'https://www.facebook.com/deutschvie/',
             position: 'right',
             className: 'navbar-icon fab fa-facebook',
             'aria-label': 'Facebook',
@@ -191,24 +146,6 @@ const config = {
             position: 'right',
             className: 'navbar-icon fab fa-facebook-messenger',
             'aria-label': 'Messenger',
-          },
-          {
-            href: 'https://t.me/mr_thinh',
-            position: 'right',
-            className: 'navbar-icon fab fa-telegram-plane',
-            'aria-label': 'Telegram',
-          },
-          {
-            href: 'https://www.youtube.com/@learn_anything_az?sub_confirmation=1',
-            position: 'right',
-            className: 'navbar-icon fab fa-youtube',
-            'aria-label': 'YouTube',
-          },
-          {
-            href: 'https://github.com/learn-anything-az/awesome_docusaurus',
-            position: 'right',
-            className: 'navbar-icon fab fa-github',
-            'aria-label': 'GitHub',
           },
         ],
       },
