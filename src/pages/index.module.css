@@ -1,23 +1,37 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* Hero Banner Styling */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Chỉ giữ lại nếu bạn thực sự cần */
+  background-size: cover;
+  background-position: center;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 1200px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 1rem; /* Giảm padding cho màn hình trung bình */
   }
 }
 
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 2rem 0.5rem; /* Tối ưu cho màn hình nhỏ */
+  }
+}
+
+/* Button Container */
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem; /* Thêm khoảng cách giữa các nút */
+  flex-wrap: wrap; /* Để các nút xuống hàng nếu không đủ không gian */
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column; /* Nút xếp dọc trên màn hình nhỏ */
+    gap: 0.5rem; /* Khoảng cách giữa các nút nhỏ hơn */
+  }
 }

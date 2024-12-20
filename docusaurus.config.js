@@ -25,7 +25,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'Deutsch.vn', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -89,7 +89,7 @@ const config = {
       // },
 
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/avt.jpeg',
       navbar: {
         title: 'Deutsch.vn',
         logo: {
@@ -136,14 +136,6 @@ const config = {
               {
                 to: '/demo/faq', 
                 label: 'Demo - CTA & FAQ', 
-              },
-              {
-                to: '/markdown/page-with-subscribe-box', 
-                label: 'Trang Markdown & Subscribe', 
-              },
-              {
-                to: '/markdown/page-with-faq', 
-                label: 'Trang Markdown & FAQ', 
               },
             ],
           },
