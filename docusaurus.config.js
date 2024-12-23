@@ -121,25 +121,6 @@ const config = {
             activeBaseRegex: `/blog`,
           },
           {
-            label: 'Thư viện mẫu',
-            position: 'left',
-            activeBaseRegex: `/thu-vien-mau`,
-            items: [
-              {
-                to: '/demo/about', 
-                label: 'Demo - Về chúng tôi', 
-              },
-              {
-                to: '/demo/featured-products', 
-                label: 'Demo - Sản phẩm nổi bật + CTA', 
-              },
-              {
-                to: '/demo/faq', 
-                label: 'Demo - CTA & FAQ', 
-              },
-            ],
-          },
-          {
             href: 'https://www.facebook.com/deutschvie/',
             position: 'right',
             className: 'navbar-icon fab fa-facebook',
