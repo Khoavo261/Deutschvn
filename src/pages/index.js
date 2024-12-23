@@ -39,15 +39,15 @@ const products = [
 const faqData = [
   {
     question: "Docusaurus là gì? Sử dụng Docusaurus như thế nào?",
-    answer: "Docusaurus là một sản phẩm mã nguồn mở do Facebook phát triển, được thiết kế đặc biệt để xây dựng trang tài liệu và blog dễ dàng với tính tuỳ biến cao. Trong khóa học này, bạn sẽ học cách cài đặt, cấu hình, và tuỳ biến các thành phần trong Docusaurus với framework React để tạo website chuyên nghiệp, hấp dẫn. Bạn không phải bắt đầu từ con số 0 vì mình sẽ chia sẻ các mẫu giao diện mình đã phát triển giúp bạn dễ dàng làm quen.",
+    answer: "Docusaurus là một sản phẩm mã nguồn mở do Facebook phát triển, được thiết kế đặc biệt để xây dựng trang tài liệu và blog dễ dàng với tính tuỳ biến cao.",
   },
   {
     question: "Vì sao chọn Docusaurus để tạo Website?",
-    answer: "Docusaurus là một công cụ mã nguồn mở mạnh mẽ và miễn phí giúp tạo website nhanh chóng mà không lo tốn kém. Định dạng website này do Facebook phát triển nên được hỗ trợ tốt và cập nhật liên tục. Docusaurus phù hợp cho trang tài liệu và blog với khả năng hỗ trợ SEO rất tốt, đa ngôn ngữ, và các cấu trúc dễ tùy biến, giúp bạn có thể xây dựng một website chuyên nghiệp mà không cần nhiều kiến thức về lập trình.",
+    answer: "Docusaurus là một công cụ mã nguồn mở mạnh mẽ và miễn phí giúp tạo website nhanh chóng mà không lo tốn kém.",
   },
   {
     question: "Có tạo được website chuyên nghiệp nếu chưa biết lập trình hay thiết kế?",
-    answer: "Đúng. Bạn có thể làm được vì mình sẽ chia sẻ với bạn các mẫu giao diện do mình phát triển để bắt đầu làm quen và tuỳ biến. Bạn được hướng dẫn và hỗ trợ từng bước để tạo ra bất kỳ giao diện website nào bạn có thể hình dung. Cách dễ nhất cho người chưa có nhiều kinh nghiệm chính là lấy cảm hứng hay thậm chí copy nguyên mẫu các thiết kế chuyên nghiệp được bán trên themeforest hoặc 1 trang web bất kỳ mà bạn ấn tượng. Việc này là khả thi vì công cụ AI như ChatGPT có thể nhận đầu vào hình ảnh, phân tích và tạo ra bộ giao diện theo hình ảnh bạn cung cấp. Mình làm được việc này và mình sẽ giúp bạn. Việc sao chép và tích luỹ dần các khái niệm về thiết kế, lập trình giúp bạn bồi dưỡng thêm năng lực sáng tạo để tự mình tạo ra giao diện độc đáo cho thương hiệu khi đủ khả năng.",
+    answer: "Bạn có thể làm được vì mình sẽ chia sẻ với bạn các mẫu giao diện đã phát triển để bắt đầu làm quen.",
   },
 ];
 
@@ -90,7 +90,7 @@ const Home = () => {
 
         <TwoColumnSection
           title="Câu Chuyện Của Chúng Tôi"
-          description="Learn Anything luôn khuyến khích bạn giống như nước – không ngừng tìm kiếm, thay đổi và thích nghi với những thử thách mới. Đối với chúng tôi, học tập là con đường rộng mở và mang tính cá nhân cao."
+          description="Learn Anything luôn khuyến khích bạn giống như nước – không ngừng tìm kiếm, thay đổi và thích nghi với những thử thách mới."
           buttonText="Kết nối"
           buttonLink="#"
           titleColor="#000000"
@@ -102,27 +102,8 @@ const Home = () => {
           columnRatio="1.5"
         />
 
-        <TwoColumnSection
-          title="Khơi Nguồn Cảm Hứng"
-          description="Tại Learn Anything, chúng tôi không chỉ tạo ra một nền tảng học tập – mà còn mở ra một hành trình để bạn khám phá, trải nghiệm và không ngừng biến đổi."
-          buttonText="Tìm hiểu"
-          buttonLink="#"
-          titleColor="#000000"
-          descriptionColor="#333333"
-          buttonColor="#000000"
-          imageSrc="https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D"
-          imageAlt="Khơi nguồn cảm hứng"
-          imagePosition="left"
-          columnRatio="1.5"
-        />
-
         <FAQSection
-          faqData={faqData && Array.isArray(faqData) ? faqData : []} // Đảm bảo faqData luôn hợp lệ
-          title="Câu Hỏi Thường Gặp"
-          titleFontSize="2rem"
-          titleColor="#000000"
-          questionColor="#333333"
-          answerColor="#666666"
+          faqData={faqData} // Truyền `faqData` đúng tên prop
         />
       </div>
     </Layout>

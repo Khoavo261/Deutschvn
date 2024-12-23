@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import styles from './FAQSection.module.css'; // Import CSS module
-import '@fortawesome/fontawesome-free/css/all.min.css'; // FontAwesome for icons
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome for icons
 
-const FAQSection = ({ faqs = [] }) => {
+const FAQSection = ({ faqData = [] }) => { // Đổi tên prop thành `faqData` để khớp với phần Home
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle trạng thái active
   };
 
-  if (!faqs.length) {
+  if (!faqData.length) {
     return (
       <section className={styles.faqSection} id="faq">
         <h2 className={styles.sectionTitle}>Câu Hỏi Thường Gặp</h2>
@@ -22,7 +22,7 @@ const FAQSection = ({ faqs = [] }) => {
     <section className={styles.faqSection} id="faq">
       <h2 className={styles.sectionTitle}>Câu Hỏi Thường Gặp</h2>
       <div className={styles.faqWrapper}>
-        {faqs.map((faq, index) => (
+        {faqData.map((faq, index) => (
           <div
             key={index}
             className={`${styles.faqItem} ${activeIndex === index ? styles.active : ''}`}
