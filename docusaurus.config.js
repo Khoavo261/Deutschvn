@@ -12,7 +12,7 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Deutsch.vn',
+  title: 'Khoavo',
   tagline: 'Bọn mìh xây dựng cộng đồng tiếng đức ở đây',
   favicon: 'img/avt.jpeg',
 
@@ -98,22 +98,10 @@ const config = {
         },
         items: [
           {
-            to: '/docs/Deutsch',
+            to: '/docs/Green-Labo',
             position: 'left',
-            label: 'Tiếng Đức',
-            activeBaseRegex: `/docs/Deutsch`,
-          },
-          {
-            to: '/docs/Mathematik',
-            position: 'left',
-            label: 'Toán',
-            activeBaseRegex: `/docs/Mathematik`,
-          },
-          {
-            to: '/docs/Hoso',
-            position: 'left',
-            label: 'Hồ sơ du học áo',
-            activeBaseRegex: `/docs/hoso`,
+            label: 'Green-Labo',
+            activeBaseRegex: `/docs/Green-Labo`,
           },
           {to: '/blog', 
             label: 'Blog', 
