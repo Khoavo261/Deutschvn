@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
-import styles from './FAQSection.module.css'; // Nạp module
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Fontawesome cung cấp các icon sử dụng cho component FAQ cụ thể là dấu + và -
+import styles from './FAQSection.module.css'; // Import CSS module
+import '@fortawesome/fontawesome-free/css/all.min.css'; // FontAwesome for icons
 
-const FAQSection = ({ faqs }) => {
+const FAQSection = ({ faqs = [] }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
-    setActiveIndex(index === activeIndex ? null : index); // Toggle active state
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
+  if (!faqs.length) {
+    return (
+      <section className={styles.faqSection} id="faq">
+        <h2 className={styles.sectionTitle}>Câu Hỏi Thường Gặp</h2>
+        <p className={styles.noFaqs}>Hiện không có câu hỏi nào được cung cấp.</p>
+      </section>
+    );
+  }
 
   return (
     <section className={styles.faqSection} id="faq">
@@ -18,9 +27,19 @@ const FAQSection = ({ faqs }) => {
             key={index}
             className={`${styles.faqItem} ${activeIndex === index ? styles.active : ''}`}
           >
-            <div className={styles.faqQuestion} onClick={() => toggleFAQ(index)}>
+            <div
+              className={styles.faqQuestion}
+              onClick={() => toggleFAQ(index)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === 'Enter' && toggleFAQ(index)}
+            >
               <h3>{faq.question}</h3>
-              <i className={`fas ${activeIndex === index ? 'fa-minus' : 'fa-plus'} ${styles.icon}`}></i>
+              <i
+                className={`fas ${
+                  activeIndex === index ? 'fa-minus' : 'fa-plus'
+                } ${styles.icon}`}
+              ></i>
             </div>
             {activeIndex === index && (
               <div className={styles.faqAnswer}>
