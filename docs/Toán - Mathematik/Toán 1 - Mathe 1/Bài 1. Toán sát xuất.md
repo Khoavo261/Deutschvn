@@ -1,17 +1,4 @@
----
-title: "TBài 1: oán sát xuất"
-author:
-  - Khoa Vo
-date: 2024-13-We
-description: "Tính toán xác suất: Giới thiệu qua bài toán bầu cử"
-domain: Deutsch.vn
-image: "![](../static/images/Ảnh%20chụp%20Màn%20hình%202024-12-18%20lúc%2017.22.24.png)"
-keywords: 
-slug: 
-tags:
-  - Toan
-  - Mathematic
----
+
 ### **Wahrscheinlichkeitsrechnung: Einführung anhand eines Wahlproblems**
 
 **Tính toán xác suất: Giới thiệu qua bài toán bầu cử**

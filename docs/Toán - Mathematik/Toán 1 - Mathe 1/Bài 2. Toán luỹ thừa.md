@@ -1,21 +1,3 @@
----
-title: Bài 2. Toán luỹ thừa
-author:
-  - Khoa Vo
-date: 2024-12-18
-description: toán luỹ kế
-domain: Deutsch.vn
-image: url_or_relative_path_to_image
-keywords: 
-slug: 
-tags:
-  - Toan
-  - Mathematic
----
-
-import ImageModal from '@site/src/components/ImageModal/ImageModal';
-import SubscribeNewsletter from '@site/src/components/SubscribeNewsletter/SubscribeNewsletter';
-
 
 ### **Giới thiệu / Einleitung**
 
