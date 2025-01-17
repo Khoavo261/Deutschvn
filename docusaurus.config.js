@@ -93,15 +93,33 @@ const config = {
       navbar: {
         title: 'Deutsch.vn',
         logo: {
-          alt: 'Awesome Docusaurus Logo',
+          alt: 'Deutsch.vn',
           src: 'img/avt.jpeg',
         },
         items: [
           {
-            to: '/docs/Green-Labo',
+            to: '/docs/deutsch/a1niveau/intro',
             position: 'left',
-            label: 'Green-Labo',
-            activeBaseRegex: `/docs/Green-Labo`,
+            label: 'A1 Niveau',
+            activeBaseRegex: `/docs/deutsch/a1niveau/intro`,
+          },
+          {
+            to: '/docs/deutsch/a2niveau/intro',
+            position: 'left',
+            label: 'A2 Niveau',
+            activeBaseRegex: `/docs/deutsch/a2niveau/intro`,
+          },
+          {
+            to: '/docs/deutsch/b1niveau/intro',
+            position: 'left',
+            label: 'B1 Niveau',
+            activeBaseRegex: `/docs/deutsch/b1niveau/intro`,
+          },
+          {
+            to: '/docs/deutsch/b2niveau/intro',
+            position: 'left',
+            label: 'B2 Niveau',
+            activeBaseRegex: `/docs/deutsch/b2niveau/intro`,
           },
           {to: '/blog', 
             label: 'Blog', 

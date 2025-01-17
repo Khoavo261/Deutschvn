@@ -36,7 +36,6 @@ Kết quả:
 import NbviewerEmbed from '@site/src/components/MediaEmbed/NbviewerEmbed';
 import PdfEmbeded from '@site/src/components/MediaEmbed/PdfEmbeded'; -->
 
-<br></br>
 
 ---
 
@@ -62,6 +61,5 @@ Thông tin gistId và notebookName được lấy như trong hình mô tả trê
 
 Và kết quả dưới đây
 
-<br></br>
 
 <NbviewerEmbed gistId="d736cedbd00aa8b8a21d152f8a410dab" notebookName="gemini-ai-in-action-vnstock-x-google-gemini.ipynb" />
