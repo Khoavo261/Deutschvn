@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Deutsch.vn",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Deutsch.vn",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.A1 Niveau": {
+    "message": "A1 Niveau",
+    "description": "Navbar item with label A1 Niveau"
+  },
+  "item.label.A2 Niveau": {
+    "message": "A2 Niveau",
+    "description": "Navbar item with label A2 Niveau"
+  },
+  "item.label.B1 Niveau": {
+    "message": "B1 Niveau",
+    "description": "Navbar item with label B1 Niveau"
+  },
+  "item.label.B2 Niveau": {
+    "message": "B2 Niveau",
+    "description": "Navbar item with label B2 Niveau"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}

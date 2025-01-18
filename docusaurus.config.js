@@ -34,9 +34,13 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+    defaultLocale: 'en', // Kiểm tra ngôn ngữ mặc định
+    locales: ['en', 'vi'], // Đảm bảo danh sách ngôn ngữ đầy đủ
+    localeConfigs: {
+      en: { label: 'English' },
+      vi: { label: 'Tiếng Việt' }
+    }
+  },  
 
   markdown: {
     mermaid: true,
@@ -98,28 +102,28 @@ const config = {
         },
         items: [
           {
-            to: '/docs/A1 Niveau/intro',
+            to: '/docs/a1niveau/intro',
             position: 'left',
             label: 'A1 Niveau',
-            activeBaseRegex: `/docs/A1 Niveau/intro`,
+            activeBaseRegex: `/docs/a1niveau/intro`,
           },
           {
-            to: '/docs/A2 Niveau/intro',
+            to: '/docs/a2niveau/intro',
             position: 'left',
             label: 'A2 Niveau',
-            activeBaseRegex: `/docs/A2 Niveau/intro`,
+            activeBaseRegex: `/docs/a2niveauintro`,
           },
           {
-            to: '/docs/B1 Niveau/intro',
+            to: '/docs/b1niveau/intro',
             position: 'left',
             label: 'B1 Niveau',
-            activeBaseRegex: `/docs/B1 Niveau/intro`,
+            activeBaseRegex: `/docs/b1niveau/intro`,
           },
           {
-            to: '/docs/B2 Niveau/intro',
+            to: '/docs/b2niveau/intro',
             position: 'left',
             label: 'B2 Niveau',
-            activeBaseRegex: `/docs/B2 Niveau/intro`,
+            activeBaseRegex: `/docs/b2niveau/intro`,
           },
           {to: '/blog', 
             label: 'Blog', 
