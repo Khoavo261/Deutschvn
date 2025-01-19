@@ -1,153 +1,135 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Khoavo',
-  tagline: 'Bọn mìh xây dựng cộng đồng tiếng đức ở đây',
+  tagline: 'Bọn mình xây dựng cộng đồng tiếng Đức ở đây',
   favicon: 'img/avt.jpeg',
 
-  // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'Deutsch.vn', // Usually your repo name.
+  organizationName: 'Khoavo', // Tên tổ chức hoặc người dùng GitHub
+  projectName: 'Deutsch.vn', // Tên dự án hoặc repository trên GitHub
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en', // Kiểm tra ngôn ngữ mặc định
-    locales: ['en', 'vi'], // Đảm bảo danh sách ngôn ngữ đầy đủ
+    defaultLocale: 'vi', // Ngôn ngữ mặc định là tiếng Việt
+    locales: ['vi', 'de'], // Hỗ trợ tiếng Việt và tiếng Đức
     localeConfigs: {
-      en: { label: 'English' },
-      vi: { label: 'Tiếng Việt' }
-    }
-  },  
+      vi: { label: 'Tiếng Việt' },
+      de: { label: 'Deutsch' },
+    },
+  },
 
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
 
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  themes: ['@docusaurus/theme-mermaid'], // Hỗ trợ Mermaid cho biểu đồ
+
+  plugins: [
+    require.resolve('docusaurus-lunr-search'), // Tích hợp tìm kiếm
+  ],
 
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Khoavo/Deutsch.vn/edit/main/', // Liên kết chỉnh sửa tệp tài liệu
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
-            xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+            'https://github.com/Khoavo/Deutsch.vn/edit/main/blog/', // Liên kết chỉnh sửa blog
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-
-      // announcementBar: {
-      //   id: 'announcementBar-v3.2', // Increment on change
-      //   content: `🎉️ <b>Khai giảng khoá học Python chứng khoán K9 từ 8/12/2024 <a target="_blank" href="https://vnstocks.com/lp-khoa-hoc-python-chung-khoan/"></a></b>. Đăng ký ngay! 🥳️`,
-      // },
-
-      // Replace with your project's social card
-      image: 'img/avt.jpeg',
-      navbar: {
-        title: 'Deutsch.vn',
-        logo: {
-          alt: 'Deutsch.vn',
-          src: 'img/avt.jpeg',
+  themeConfig: {
+    image: 'img/avt.jpeg', // Social card
+    navbar: {
+      title: 'Deutsch.vn',
+      logo: {
+        alt: 'Deutsch.vn',
+        src: 'img/avt.jpeg',
+      },
+      items: [
+        {
+          to: '/docs/a1niveau/intro',
+          position: 'left',
+          label: 'A1 Niveau',
+          activeBaseRegex: `/docs/a1niveau/`,
         },
-        items: [
-          {
-            to: '/docs/a1niveau/intro',
-            position: 'left',
-            label: 'A1 Niveau',
-            activeBaseRegex: `/docs/a1niveau/intro`,
-          },
-          {
-            to: '/docs/a2niveau/intro',
-            position: 'left',
-            label: 'A2 Niveau',
-            activeBaseRegex: `/docs/a2niveauintro`,
-          },
-          {
-            to: '/docs/b1niveau/intro',
-            position: 'left',
-            label: 'B1 Niveau',
-            activeBaseRegex: `/docs/b1niveau/intro`,
-          },
-          {
-            to: '/docs/b2niveau/intro',
-            position: 'left',
-            label: 'B2 Niveau',
-            activeBaseRegex: `/docs/b2niveau/intro`,
-          },
-          {to: '/blog', 
-            label: 'Blog', 
-            position: 'left',
-            activeBaseRegex: `/blog`,
-          },
-          {
-            href: 'https://www.facebook.com/deutschvie/',
-            position: 'right',
-            className: 'navbar-icon fab fa-facebook',
-            'aria-label': 'Facebook',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Khoavo.vn. All rights reserved.`,
-      },
-      
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        {
+          to: '/docs/a2niveau/intro',
+          position: 'left',
+          label: 'A2 Niveau',
+          activeBaseRegex: `/docs/a2niveau/`,
+        },
+        {
+          to: '/docs/b1niveau/intro',
+          position: 'left',
+          label: 'B1 Niveau',
+          activeBaseRegex: `/docs/b1niveau/`,
+        },
+        {
+          to: '/docs/b2niveau/intro',
+          position: 'left',
+          label: 'B2 Niveau',
+          activeBaseRegex: `/docs/b2niveau/`,
+        },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          href: 'https://www.facebook.com/deutschvie/',
+          position: 'right',
+          className: 'navbar-icon fab fa-facebook',
+          'aria-label': 'Facebook Page',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            { label: 'A1 Niveau', to: '/docs/a1niveau/intro' },
+            { label: 'A2 Niveau', to: '/docs/a2niveau/intro' },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/deutschvie/',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Khoavo.vn. All rights reserved.`,
+    },
+    prism: {
+      theme: prismThemes.github, // Theme sáng
+      darkTheme: prismThemes.dracula, // Theme tối
+    },
+  },
 };
 
 export default config;
