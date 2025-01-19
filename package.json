@@ -32,7 +32,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
-    "docusaurus-lunr-search": "^3.5.0",
+    "docusaurus-lunr-search": "^3.6.0",
     "echarts": "^5.5.1",
     "hast-util-to-estree": "^3.1.1",
     "prism-react-renderer": "^2.3.0",

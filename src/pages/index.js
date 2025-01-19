@@ -69,7 +69,7 @@ const Home = () => {
         <FeaturedProducts
           products={products}
           title="Tại Sao Deutsch.vn Được Tạo Ra?"
-          subtitle=""Là người học tiếng Đức, tôi hiểu rõ những khó khăn mà bạn đang gặp phải: tài liệu không rõ ràng, cảm giác lạc lối trong việc học. Đó là lý do tôi tạo ra Deutsch.vn, một nơi mà bạn có thể học tập, kết nối và phát triển miễn phí.""
+          subtitle="Là người học tiếng Đức tôi hiểu rõ những khó khăn mà bạn đang gặp phải: tài liệu không rõ ràng, cảm giác lạc lối trong việc học. Đó là lý do tôi tạo ra Deutsch.vn, một nơi mà bạn có thể học tập, kết nối và phát triển miễn phí."
           titleFontSize="2rem"
           subtitleFontSize="1rem"
           titleColor="#000000"
@@ -79,9 +79,10 @@ const Home = () => {
           imageBorderRadius="10px"
           imageOrientation="landscape"
           itemsInView={3}
-        />
+          />
 
-        <TwoColumnSection
+
+        {/* <TwoColumnSection
           title="Câu Chuyện Của Chúng Tôi"
           description="Learn Anything luôn khuyến khích bạn giống như nước – không ngừng tìm kiếm, thay đổi và thích nghi với những thử thách mới."
           buttonText="Kết nối"
@@ -93,7 +94,7 @@ const Home = () => {
           imageAlt="Câu chuyện của chúng tôi"
           imagePosition="right"
           columnRatio="1.5"
-        />
+        /> */}
 
         <FAQSection
           faqData={faqData} // Truyền `faqData` đúng tên prop

@@ -1,40 +1,37 @@
 // @ts-check
-import { themes as prismThemes } from 'prism-react-renderer';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-
-/** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Khoavo',
-  tagline: 'Bọn mình xây dựng cộng đồng tiếng Đức ở đây',
-  favicon: 'img/avt.jpeg',
+  title: 'Deutsch.vn',
+  tagline: 'Cộng đồng học tiếng Đức dành cho bạn!',
+  favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://deutsch.vn', // Thay bằng URL thực tế của bạn
   baseUrl: '/',
 
-  organizationName: 'Khoavo', // Tên tổ chức hoặc người dùng GitHub
-  projectName: 'Deutsch.vn', // Tên dự án hoặc repository trên GitHub
+  organizationName: 'Khoavo', // Tên tổ chức hoặc cá nhân sở hữu trang web
+  projectName: 'Deutsch.vn', // Tên repository
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'vi', // Ngôn ngữ mặc định là tiếng Việt
-    locales: ['vi', 'de'], // Hỗ trợ tiếng Việt và tiếng Đức
+    defaultLocale: 'vi',
+    locales: ['vi', 'de'],
     localeConfigs: {
-      vi: { label: 'Tiếng Việt' },
-      de: { label: 'Deutsch' },
+      vi: {
+        label: 'Tiếng Việt',
+        direction: 'ltr',
+      },
+      de: {
+        label: 'Deutsch',
+        direction: 'ltr',
+      },
     },
   },
 
-  markdown: {
-    mermaid: true,
-  },
-
-  themes: ['@docusaurus/theme-mermaid'], // Hỗ trợ Mermaid cho biểu đồ
+  themes: ['@docusaurus/theme-mermaid'],
 
   plugins: [
-    require.resolve('docusaurus-lunr-search'), // Tích hợp tìm kiếm
+    require.resolve('docusaurus-lunr-search'),
   ],
 
   presets: [
@@ -43,16 +40,11 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/Khoavo/Deutsch.vn/edit/main/', // Liên kết chỉnh sửa tệp tài liệu
+          editUrl: 'https://github.com/Khoavo/Deutsch.vn/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-          },
-          editUrl:
-            'https://github.com/Khoavo/Deutsch.vn/edit/main/blog/', // Liên kết chỉnh sửa blog
+          editUrl: 'https://github.com/Khoavo/Deutsch.vn/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,44 +54,41 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/avt.jpeg', // Social card
     navbar: {
       title: 'Deutsch.vn',
       logo: {
-        alt: 'Deutsch.vn',
-        src: 'img/avt.jpeg',
+        alt: 'Deutsch.vn Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
-          to: '/docs/a1niveau/intro',
-          position: 'left',
-          label: 'A1 Niveau',
-          activeBaseRegex: `/docs/a1niveau/`,
+          type: "docSidebar",
+          sidebarId: "a1niveau",
+          position: "left",
+          label: "A1 Niveau",
         },
         {
-          to: '/docs/a2niveau/intro',
-          position: 'left',
-          label: 'A2 Niveau',
-          activeBaseRegex: `/docs/a2niveau/`,
+          type: "docSidebar",
+          sidebarId: "a2niveau",
+          position: "left",
+          label: "A2 Niveau",
+        },        
+        {
+          type: "docSidebar",
+          sidebarId: "b1niveau",
+          position: "left",
+          label: "B1 Niveau",
         },
         {
-          to: '/docs/b1niveau/intro',
-          position: 'left',
-          label: 'B1 Niveau',
-          activeBaseRegex: `/docs/b1niveau/`,
+          type: "docSidebar",
+          sidebarId: "b2niveau",
+          position: "left",
+          label: "B2 Niveau",
         },
         {
-          to: '/docs/b2niveau/intro',
-          position: 'left',
-          label: 'B2 Niveau',
-          activeBaseRegex: `/docs/b2niveau/`,
-        },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://www.facebook.com/deutschvie/',
+          href: 'https://github.com/Khoavo/Deutsch.vn',
+          label: 'GitHub',
           position: 'right',
-          className: 'navbar-icon fab fa-facebook',
-          'aria-label': 'Facebook Page',
         },
       ],
     },
@@ -107,29 +96,19 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Community',
           items: [
-            { label: 'A1 Niveau', to: '/docs/a1niveau/intro' },
-            { label: 'A2 Niveau', to: '/docs/a2niveau/intro' },
+            { label: 'GitHub', href: 'https://github.com/Khoavo/Deutsch.vn' },
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Facebook',
-              href: 'https://www.facebook.com/deutschvie/',
-            },
-          ],
+          title: 'More',
+          items: [{ label: 'Blog', to: '/blog' }],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Khoavo.vn. All rights reserved.`,
-    },
-    prism: {
-      theme: prismThemes.github, // Theme sáng
-      darkTheme: prismThemes.dracula, // Theme tối
+      copyright: `Copyright © ${new Date().getFullYear()} Deutsch.vn.`,
     },
   },
 };
 
-export default config;
+module.exports = config;

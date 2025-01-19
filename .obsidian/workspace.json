@@ -11,10 +11,14 @@
             "id": "d1dc50cc1bcd7e0e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/a1niveau/Grammatik/0. Giới thiệu về ngữ pháp A1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "0. Giới thiệu về ngữ pháp A1"
             }
           }
         ]
@@ -161,6 +165,9 @@
   },
   "active": "d1dc50cc1bcd7e0e",
   "lastOpenFiles": [
+    "docs/b2niveau/Vokabular",
+    "docs/a1niveau/Vokabular",
+    "docs/a2niveau/Vokabular",
     "build/lunr-index-1737164269517.json",
     "build/lunr-index.json",
     "build/search-doc-1737164269517.json",
@@ -169,9 +176,6 @@
     "build/index.html",
     "build/docs/B1 Niveau/Vokabular/Priorität 1/Training für den Beruf/index.html",
     "build/docs/B2 Niveau/Grammatik/Câu giả định nâng cao (Konjunktiv II, Konjunktiv I)/index.html",
-    "build/docs/B2 Niveau/Grammatik/Câu bị động nâng cao (Passiv Perfekt, Passiv Konjunktiv II)/index.html",
-    "build/docs/B1 Niveau/Vokabular/Priorität 1/Training für den Beruf",
-    "build/docs/B2 Niveau/Grammatik/Động từ đi kèm giới từ nâng cao (Verben mit Präpositionen)/index.html",
     "build/templates/youtube.md",
     "build/templates/new post.md",
     "build/templates/new post no yaml.md",
