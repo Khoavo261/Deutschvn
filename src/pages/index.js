@@ -7,62 +7,55 @@ import FAQSection from '@site/src/components/FAQSection/FAQSection';
 
 const products = [
   {
-    image: "https://images.unsplash.com/photo-1519289455504-3510c41b7cc3?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D",
-    title: "Docusaurus: Đơn giản hóa tài liệu",
-    description: "Tối ưu hóa quy trình tạo tài liệu với Docusaurus, một trình tạo trang tĩnh mạnh mẽ được xây dựng trên nền tảng React.",
-    buttonText: 'Thông tin & Đăng ký',
+    image: "static/images/clear.png",
+    title: "Tài liệu học rõ ràng",
+    description: "Tài liệu đã được team mình tổng hợp theo trình độ cụ thể thông qua quá trình học của bản thân, từ A1 đến B2. Và sẽ được update liên tục cho đến khi hoàn thiện.",
+    buttonText: '/',
     link: "#",
   },
   {
-    image: "https://images.unsplash.com/photo-1504519560822-bed2d817f87f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D",
-    title: "React: Framework UI cho trang web động",
-    description: "Tận dụng kiến trúc dựa trên thành phần của React để tạo các yếu tố giao diện tương tác và có thể tái sử dụng một cách dễ dàng.",
-    buttonText: 'Thông tin & Đăng ký',
+    image: "static/imagesfree.png",
+    title: "Học tập miễn phí",
+    description: "Khi du học tại Áo, mình may mắn được tiếp cận với rất nhiều tài liệu tiếng đức `Miễn phí` từ chính phù. Mình chỉ đơn giản là tổng hợp và chia sẽ lại cho các bạn qua quá trình mình học thôi!",
+    buttonText: '',
     link: "#",
   },
   {
-    image: "https://images.unsplash.com/photo-1605762566242-bd1c73c885b0?q=80&w=2042&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D",
-    title: "Tùy chỉnh trang web bằng AI",
-    description: "Khám phá cách tích hợp AI để cá nhân hóa trang Docusaurus của bạn dựa trên sở thích và hành vi của người dùng.",
-    buttonText: 'Thông tin & Đăng ký',
-    link: "#",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1643903096045-07741be1f245?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D",
-    title: "Từ con số 0 đến làm chủ kỹ năng tạo web với Docusaurus + AI",
-    description: "Bắt đầu từ những minh hoạ dễ hiểu và chi tiết để khơi nguồn cảm hứng. Tự tạo component bạn muốn khi đủ khả năng.",
-    buttonText: 'Thông tin & Đăng ký',
+    image: "static/images/comunity.png",
+    title: "Cộng đồng năng động",
+    description: "Mình đã có nhiều năm kinh nghiệm với việc xây dựng cộng đồng rồi, vì vậy rất mong có thể xây được một cộng đồng tiếng đức sạch, thật sự giúp đỡ được những ai có nhu cầu học tiếng đức.",
+    buttonText: '',
     link: "#",
   },
 ];
 
 const faqData = [
   {
-    question: "Docusaurus là gì? Sử dụng Docusaurus như thế nào?",
-    answer: "Docusaurus là một sản phẩm mã nguồn mở do Facebook phát triển, được thiết kế đặc biệt để xây dựng trang tài liệu và blog dễ dàng với tính tuỳ biến cao.",
+    question: "Nếu tôi có thắc mắc hoặc cần giúp đỡ, tôi liên hệ ai?",
+    answer: "Bạn có thể tham gia vào cộng đồng `Deutshc.vn` – nơi không chỉ có những người học như bạn mà còn có các thầy cô dạy tiếng Đức và những người bạn với trình độ vững chắc. Tại đây, mọi người luôn sẵn lòng chia sẻ kinh nghiệm và giúp bạn giải đáp mọi thắc mắc trong hành trình chinh phục tiếng Đức.",
   },
   {
-    question: "Vì sao chọn Docusaurus để tạo Website?",
-    answer: "Docusaurus là một công cụ mã nguồn mở mạnh mẽ và miễn phí giúp tạo website nhanh chóng mà không lo tốn kém.",
+    question: "Liệu bạn có đang sử dụng cộng đồng để quảng cáo hay thu lợi không?",
+    answer: "Mục tiêu của tôi là xây dựng một không gian học tập thân thiện, không bị chi phối bởi quảng cáo.",
   },
   {
-    question: "Có tạo được website chuyên nghiệp nếu chưa biết lập trình hay thiết kế?",
-    answer: "Bạn có thể làm được vì mình sẽ chia sẻ với bạn các mẫu giao diện đã phát triển để bắt đầu làm quen.",
+    question: "Đây có thật sự là trang web miễn phí không?",
+    answer: "Hoàn toàn miễn phí! Với hơn 5 năm kinh nghiệm xây dựng nhiều cộng đồng chất lượng, mình hiểu rõ giá trị của việc chia sẻ kiến thức. Trang web này đơn thuần chỉ là nơi mình công khai những tài liệu học tập cá nhân mà mình đã tích lũy và sử dụng trong quá trình học tiếng Đức. Vì vậy, bạn có thể yên tâm rằng đây chắc chắn là một trang web miễn phí.",
   },
 ];
 
 const Home = () => {
   return (
     <Layout
-      title="Học Hỏi Không Giới Hạn"
-      description="Khơi dậy sự tò mò trong bạn, đắm chìm trong chân trời kiến thức mới thú vị."
+      title="Cùng học tiếng Đức với mình nhé!"
+      description="Bạn không cần phải học thật nhanh, chỉ cần học theo cách phù hợp với chính mình. Và đây là tất cả tài liệu mình ghi chú lại trong quá trình học của mình. Mong là sẽ giúp được bạn phần nào đó!"
     >
       <div>
         <PureHero
-          title="Học Hỏi Không Giới Hạn"
-          subtitle="Khơi dậy sự tò mò trong bạn, đắm chìm trong chân trời kiến thức mới thú vị."
+          title="Cùng học tiếng Đức với mình nhé!"
+          subtitle="Bạn không cần phải học thật nhanh, chỉ cần học theo cách phù hợp với chính mình. Và đây là tất cả tài liệu mình ghi chú lại trong quá trình học của mình. Mong là sẽ giúp được bạn phần nào đó!"
           backgroundImage="https://images.unsplash.com/photo-1453219562534-36e2ce0ea18e?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D"
-          buttonText="Khám phá"
+          buttonText="Tham gia cộng đồng"
           buttonLink="#"
           contentWidth="60%"
           contentPosition="center"
@@ -75,8 +68,8 @@ const Home = () => {
 
         <FeaturedProducts
           products={products}
-          title="Những điều tuyệt vời từ khoá học"
-          subtitle="Chỉn chu. Chú trọng kết quả."
+          title="Tại Sao Deutsch.vn Được Tạo Ra?"
+          subtitle=""Là người học tiếng Đức, tôi hiểu rõ những khó khăn mà bạn đang gặp phải: tài liệu không rõ ràng, cảm giác lạc lối trong việc học. Đó là lý do tôi tạo ra Deutsch.vn, một nơi mà bạn có thể học tập, kết nối và phát triển miễn phí.""
           titleFontSize="2rem"
           subtitleFontSize="1rem"
           titleColor="#000000"
