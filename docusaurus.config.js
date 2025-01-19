@@ -2,7 +2,7 @@
 const config = {
   title: 'Deutsch.vn',
   tagline: 'Cộng đồng học tiếng Đức dành cho bạn!',
-  favicon: 'img/avt.png',
+  favicon: '/img/avt.png',
 
   url: 'https://deutsch.vn', // Thay bằng URL thực tế của bạn
   baseUrl: '/',
@@ -54,12 +54,12 @@ const config = {
   ],
 
   themeConfig: {
-    image: 'img/avt.png',
+    image: 'img/avt.jpeg',
     navbar: {
       title: 'Deutsch.vn',
       logo: {
         alt: 'Deutsch.vn',
-        src: 'img/avt.png',
+        src: 'img/avt.jpeg',
       },
       items: [
         {

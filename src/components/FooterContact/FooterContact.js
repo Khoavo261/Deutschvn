@@ -11,7 +11,7 @@ import SubscribeFooter from "../FooterSubscribe/FooterSubscribe";
 import styles from "./FooterContact.module.css";
 
 const FooterContact = ({
-  logoSrc = "/img/avt.png",
+  logoSrc = "img/avt.jpeg",
   bio = "Learn Anything. Be Anything. No Limits.",
   socialLinks = [
     { href: "https://facebook.com", icon: faFacebookF },

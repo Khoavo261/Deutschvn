@@ -53,7 +53,7 @@ const App = () => {
   return (
     <div>
     <CustomHeader 
-      logo="https://docusaurus.io/img/docusaurus_keytar.svg" 
+      logo="img/avt.jpeg" 
       menuItems={headerMenuItems} 
       textColor="#ffffff"
       onMenuClick={handleMenuClick}
