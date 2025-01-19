@@ -123,3 +123,7 @@
         width: calc(100% / var(--items-in-view)); /* Control cards shown via itemsInView */
     }
 }
+
+.button:empty {
+    display: none; /* Ẩn nút nếu không có nội dung */
+  }

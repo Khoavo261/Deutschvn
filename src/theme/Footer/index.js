@@ -12,7 +12,7 @@ export default function Footer(props) {
         {/* Logo and Bio Section */}
         <div className={styles.footerColumn}>
           <FooterContact
-            logoSrc="/img/avt.png200"
+            logoSrc="/img/avt.png"
             bio="Learn Anything. Be Anything. No Limits."
             socialLinks={[
               { href: "https://www.facebook.com", icon: faFacebookF },

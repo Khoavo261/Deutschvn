@@ -1,38 +1,14 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import PureHero from '@site/src/components/PureHero/PureHero';
-import TwoColumnSection from '@site/src/components/TwoColumnSection/TwoColumnSection';
-import FeaturedProducts from '@site/src/components/FeaturedProducts/FeaturedProducts';
 import FAQSection from '@site/src/components/FAQSection/FAQSection';
+import IntroductionSection from '@site/src/components/IntroductionSection/IntroductionSection'; // Import đúng thành phần
 
-const products = [
-  {
-    image: "static/images/clear.png",
-    title: "Tài liệu học rõ ràng",
-    description: "Tài liệu đã được team mình tổng hợp theo trình độ cụ thể thông qua quá trình học của bản thân, từ A1 đến B2. Và sẽ được update liên tục cho đến khi hoàn thiện.",
-    buttonText: '/',
-    link: "#",
-  },
-  {
-    image: "static/imagesfree.png",
-    title: "Học tập miễn phí",
-    description: "Khi du học tại Áo, mình may mắn được tiếp cận với rất nhiều tài liệu tiếng đức `Miễn phí` từ chính phù. Mình chỉ đơn giản là tổng hợp và chia sẽ lại cho các bạn qua quá trình mình học thôi!",
-    buttonText: '',
-    link: "#",
-  },
-  {
-    image: "static/images/comunity.png",
-    title: "Cộng đồng năng động",
-    description: "Mình đã có nhiều năm kinh nghiệm với việc xây dựng cộng đồng rồi, vì vậy rất mong có thể xây được một cộng đồng tiếng đức sạch, thật sự giúp đỡ được những ai có nhu cầu học tiếng đức.",
-    buttonText: '',
-    link: "#",
-  },
-];
 
 const faqData = [
   {
     question: "Nếu tôi có thắc mắc hoặc cần giúp đỡ, tôi liên hệ ai?",
-    answer: "Bạn có thể tham gia vào cộng đồng `Deutshc.vn` – nơi không chỉ có những người học như bạn mà còn có các thầy cô dạy tiếng Đức và những người bạn với trình độ vững chắc. Tại đây, mọi người luôn sẵn lòng chia sẻ kinh nghiệm và giúp bạn giải đáp mọi thắc mắc trong hành trình chinh phục tiếng Đức.",
+    answer: "Bạn có thể tham gia vào cộng đồng `Deutsch.vn` – nơi không chỉ có những người học như bạn mà còn có các thầy cô dạy tiếng Đức và những người bạn với trình độ vững chắc. Tại đây, mọi người luôn sẵn lòng chia sẻ kinh nghiệm và giúp bạn giải đáp mọi thắc mắc trong hành trình chinh phục tiếng Đức.",
   },
   {
     question: "Liệu bạn có đang sử dụng cộng đồng để quảng cáo hay thu lợi không?",
@@ -66,39 +42,40 @@ const Home = () => {
           fixedBackground
         />
 
-        <FeaturedProducts
-          products={products}
-          title="Tại Sao Deutsch.vn Được Tạo Ra?"
-          subtitle="Là người học tiếng Đức tôi hiểu rõ những khó khăn mà bạn đang gặp phải: tài liệu không rõ ràng, cảm giác lạc lối trong việc học. Đó là lý do tôi tạo ra Deutsch.vn, một nơi mà bạn có thể học tập, kết nối và phát triển miễn phí."
-          titleFontSize="2rem"
-          subtitleFontSize="1rem"
-          titleColor="#000000"
-          subtitleColor="#333333"
-          productFontSize="1rem"
-          productTextColor="#333333"
-          imageBorderRadius="10px"
-          imageOrientation="landscape"
-          itemsInView={3}
-          />
-
-
-        {/* <TwoColumnSection
-          title="Câu Chuyện Của Chúng Tôi"
-          description="Learn Anything luôn khuyến khích bạn giống như nước – không ngừng tìm kiếm, thay đổi và thích nghi với những thử thách mới."
-          buttonText="Kết nối"
-          buttonLink="#"
-          titleColor="#000000"
-          descriptionColor="#333333"
-          buttonColor="#000000"
-          imageSrc="https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D"
-          imageAlt="Câu chuyện của chúng tôi"
-          imagePosition="right"
-          columnRatio="1.5"
-        /> */}
-
-        <FAQSection
-          faqData={faqData} // Truyền `faqData` đúng tên prop
+        {/* Introduction Section */}
+        <IntroductionSection
+          title="Tại sao lại là Deutsch.vn!"
+          subtitle={`
+            <div style="text-align: center;">
+              <p style="margin: 8px 0; line-height: 1.6; font-size: 1rem;">
+                <span style="font-size: 1.3rem; margin-right: 5px;">📖</span>
+                Là một <strong>du học sinh tại Áo</strong>, mình có cơ hội tiếp cận với rất nhiều nguồn tài liệu học tiếng Đức <strong>miễn phí</strong>.
+                <span style="font-size: 1.3rem; margin-left: 5px;">📖</span>
+              </p>
+              <p style="margin: 8px 0; line-height: 1.6; font-size: 1rem;">
+                <span style="font-size: 1.3rem; margin-right: 5px;">💻</span>
+                Trong quá trình học, mình đã tỉ mỉ <strong>ghi chép lại tất cả trên Notion</strong> để hệ thống hóa kiến thức.
+                <span style="font-size: 1.3rem; margin-left: 5px;">💻</span>
+              </p>
+              <p style="margin: 8px 0; line-height: 1.6; font-size: 1rem;">
+                <span style="font-size: 1.3rem; margin-right: 5px;">🔗</span>
+                Và <strong>Deutsch.vn</strong> chính là nơi mình chia sẻ những tài liệu đó, giúp các bạn dễ dàng học tập và phát triển hơn.
+                <span style="font-size: 1.3rem; margin-left: 5px;">🔗</span>
+              </p>
+            </div>
+          `}
+          style={{
+            textAlign: 'center',
+            padding: '20px',
+            backgroundColor: '#f9f9f9',
+            borderRadius: '10px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            maxWidth: '600px',
+            margin: '20px auto',
+          }}
         />
+
+        <FAQSection faqData={faqData} />
       </div>
     </Layout>
   );
