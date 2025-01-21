@@ -2,8 +2,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import PureHero from '@site/src/components/PureHero/PureHero';
 import FAQSection from '@site/src/components/FAQSection/FAQSection';
-import IntroductionSection from '@site/src/components/IntroductionSection/IntroductionSection'; // Import đúng thành phần
-
+import IntroductionSection from '@site/src/components/IntroductionSection/IntroductionSection';
+import ChallengesSection from '@site/src/components/ChallengesSection/ChallengesSection'; // Import đúng thành phần
 
 const faqData = [
   {
@@ -42,6 +42,9 @@ const Home = () => {
           fixedBackground
         />
 
+        {/* Challenges Section */}
+        <ChallengesSection />
+
         {/* Introduction Section */}
         <IntroductionSection
           title="Tại sao lại là Deutsch.vn!"
@@ -75,6 +78,7 @@ const Home = () => {
           }}
         />
 
+        {/* FAQ Section */}
         <FAQSection faqData={faqData} />
       </div>
     </Layout>

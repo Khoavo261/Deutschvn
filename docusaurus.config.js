@@ -86,11 +86,6 @@ const config = {
           position: "left",
           label: "B2 Niveau",
         },
-        {
-          href: 'https://github.com/Khoavo/Deutsch.vn',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
