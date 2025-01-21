@@ -1,54 +1,44 @@
-.features-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .features-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .features-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .feature-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .feature-icon img {
-    width: 60px; /* Điều chỉnh kích thước hình ảnh */
-    height: 60px;
-    margin-bottom: 15px;
-    object-fit: cover;
-  }
-  
-  .feature-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .feature-description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-  }
-  
+.challenges-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9; /* Tùy chỉnh màu nền nếu cần */
+}
+
+.challenges-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.challenges-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Khoảng cách giữa các ô */
+  flex-wrap: wrap; /* Đảm bảo các ô xuống dòng nếu không đủ không gian */
+}
+
+.challenge-card {
+  background: white; /* Màu nền cho các ô */
+  border: 1px solid #e0e0e0; /* Đường viền nhạt */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  padding: 1.5rem;
+  text-align: center;
+  width: 300px; /* Đảm bảo kích thước đồng nhất */
+}
+
+.challenge-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.challenge-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-description {
+  font-size: 1rem;
+  color: #555;
+}

@@ -3,7 +3,6 @@ import Layout from '@theme/Layout';
 import PureHero from '@site/src/components/PureHero/PureHero';
 import FAQSection from '@site/src/components/FAQSection/FAQSection';
 import IntroductionSection from '@site/src/components/IntroductionSection/IntroductionSection';
-import ChallengesSection from '@site/src/components/ChallengesSection/ChallengesSection'; // Import đúng thành phần
 
 const faqData = [
   {
@@ -27,46 +26,19 @@ const Home = () => {
       description="Bạn không cần phải học thật nhanh, chỉ cần học theo cách phù hợp với chính mình. Và đây là tất cả tài liệu mình ghi chú lại trong quá trình học của mình. Mong là sẽ giúp được bạn phần nào đó!"
     >
       <div>
+        {/* Hero Section */}
         <PureHero
           title="Cùng học tiếng Đức với mình nhé!"
           subtitle="Bạn không cần phải học thật nhanh, chỉ cần học theo cách phù hợp với chính mình. Và đây là tất cả tài liệu mình ghi chú lại trong quá trình học của mình. Mong là sẽ giúp được bạn phần nào đó!"
           backgroundImage="https://images.unsplash.com/photo-1453219562534-36e2ce0ea18e?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fA%3D%3D"
           buttonText="Tham gia cộng đồng"
           buttonLink="#"
-          contentWidth="60%"
-          contentPosition="center"
-          titleColor="#ffffff"
-          subtitleColor="#f0f0f0"
-          buttonColor="#ffffff"
-          navColor="#ffffff"
-          fixedBackground
         />
-
-        {/* Challenges Section */}
-        <ChallengesSection />
 
         {/* Introduction Section */}
         <IntroductionSection
           title="Tại sao lại là Deutsch.vn!"
-          subtitle={`
-            <div style="text-align: center;">
-              <p style="margin: 8px 0; line-height: 1.6; font-size: 1rem;">
-                <span style="font-size: 1.3rem; margin-right: 5px;">📖</span>
-                Là một <strong>du học sinh tại Áo</strong>, mình có cơ hội tiếp cận với rất nhiều nguồn tài liệu học tiếng Đức <strong>miễn phí</strong>.
-                <span style="font-size: 1.3rem; margin-left: 5px;">📖</span>
-              </p>
-              <p style="margin: 8px 0; line-height: 1.6; font-size: 1rem;">
-                <span style="font-size: 1.3rem; margin-right: 5px;">💻</span>
-                Trong quá trình học, mình đã tỉ mỉ <strong>ghi chép lại tất cả trên Notion</strong> để hệ thống hóa kiến thức.
-                <span style="font-size: 1.3rem; margin-left: 5px;">💻</span>
-              </p>
-              <p style="margin: 8px 0; line-height: 1.6; font-size: 1rem;">
-                <span style="font-size: 1.3rem; margin-right: 5px;">🔗</span>
-                Và <strong>Deutsch.vn</strong> chính là nơi mình chia sẻ những tài liệu đó, giúp các bạn dễ dàng học tập và phát triển hơn.
-                <span style="font-size: 1.3rem; margin-left: 5px;">🔗</span>
-              </p>
-            </div>
-          `}
+          subtitle="Là một du học sinh tại Áo, mình có cơ hội tiếp cận với rất nhiều nguồn tài liệu học tiếng Đức miễn phí. Trong quá trình học, mình đã tỉ mỉ ghi chép lại tất cả trên Notion để hệ thống hóa kiến thức. Deutsch.vn chính là nơi mình chia sẻ những tài liệu đó, giúp các bạn dễ dàng học tập và phát triển hơn."
           style={{
             textAlign: 'center',
             padding: '20px',
