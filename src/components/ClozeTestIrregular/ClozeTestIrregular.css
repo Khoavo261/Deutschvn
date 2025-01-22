@@ -1,0 +1,132 @@
+.irregular-cloze-test-wrapper {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh; /* Đảm bảo khung nằm giữa toàn màn hình */
+    background-color: #f9f9f9; /* Tùy chọn: nền màu nhạt */
+    padding: 20px; /* Thêm khoảng cách để không bị sát màn hình */
+  }
+  
+  .irregular-cloze-test-container {
+    max-width: 900px; /* Giới hạn chiều rộng */
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .progress-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    width: 300px; /* Tinh chỉnh chiều rộng thanh điểm */
+    height: 24px;
+    padding: 0 5px;
+    position: relative;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 20px;
+    transition: width 0.5s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .table-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding-left: 50px;
+  }
+  
+  .irregular-cloze-test-table {
+    width: 90%; /* Giới hạn chiều rộng bảng */
+    border-collapse: collapse;
+    margin: 0 auto; /* Căn giữa bảng */
+  }
+  
+  .irregular-cloze-test-table th,
+  .irregular-cloze-test-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .irregular-cloze-test-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-transform: uppercase; /* In hoa tiêu đề cột */
+  }
+  
+  .irregular-cloze-test-table td {
+    background-color: #fff;
+    text-align: left; /* Căn trái nội dung */
+  }
+  
+  .irregular-cloze-test-table td:first-child {
+    font-weight: bold;
+    text-transform: uppercase; /* In hoa cột đầu tiên */
+    padding-left: 20px; /* Dịch sang phải một chút */
+  }
+  
+  .irregular-cloze-test-table input {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .incorrect {
+    background-color: #ffdddd; /* Làm nổi bật ô sai */
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+  
+  .check-button,
+  .reveal-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .check-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .reveal-button {
+    background-color: #2196f3;
+    color: white;
+  }
+  

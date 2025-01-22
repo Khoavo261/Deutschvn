@@ -1,0 +1,64 @@
+.sortable-cloze-test-wrapper {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .sortable-cloze-test-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  .sortable-cloze-test-table th, .sortable-cloze-test-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+  }
+  
+  .incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+  }
+  
+  .correct-answer {
+    color: #007bff;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .check-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reveal-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
