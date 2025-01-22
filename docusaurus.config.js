@@ -91,65 +91,49 @@ const config = {
           position: 'left',
           activeBaseRegex: `/baitap`,
           items: [
-            {
-              to: '/demo/cards',
-              label: 'Demo - Tất cả',
-            },
+            // {
+            //   to: '/demo/cards',
+            //   label: 'Demo - Tất cả',
+            // },
             {
               to: '/demo/batch1',
-              label: 'Unregelmäßige Verben 1',
+              label: 'Động từ bất quy tắc 1',
             },
             {
               to: '/demo/batch2',
-              label: 'Unregelmäßige Verben 2',
+              label: 'Động từ bất quy tắc 2',
             },
             {
               to: '/demo/batch3',
-              label: 'Unregelmäßige Verben 3',
+              label: 'Động từ bất quy tắc 3',
             },
             {
-              to: '/markdown/batch4',
-              label: 'Unregelmäßige Verben 4',
+              to: '/demo/batch4',
+              label: 'Động từ bất quy tắc 4',
             },
             {
-              to: '/markdown/batch5',
-              label: 'Unregelmäßige Verben 5',
+              to: '/demo/batch5',
+              label: 'Động từ bất quy tắc 5',
             },
             {
-              to: '/markdown/batch6',
-              label: 'Unregelmäßige Verben 6',
+              to: '/demo/batch6',
+              label: 'Động từ bất quy tắc 6',
             },
             {
               to: '/demo/batch7',
-              label: 'Unregelmäßige Verben 7',
+              label: 'Động từ bất quy tắc 7',
             },
             {
               to: '/demo/batch8',
-              label: 'Unregelmäßige Verben 8',
+              label: 'Động từ bất quy tắc 8',
             },
             {
               to: '/demo/batch9',
-              label: 'Unregelmäßige Verben 9',
+              label: 'Động từ bất quy tắc 9',
             },
             {
               to: '/demo/batch10',
-              label: 'Unregelmäßige Verben 10',
-            },
-            {
-              to: '/markdown/page-with-subscribe-box',
-              label: 'Trang Markdown & Subscribe',
-            },
-            {
-              to: '/markdown/page-with-faq',
-              label: 'Trang Markdown & FAQ',
-            },
-            {
-              to: '/demo/text-reveal',
-              label: 'Demo - Cuộn chữ',
-            },
-            {
-              to: '/docs/demo/',
-              label: 'Nguồn cảm hứng',
+              label: 'Động từ bất quy tắc 10',
             },
           ],
         },
