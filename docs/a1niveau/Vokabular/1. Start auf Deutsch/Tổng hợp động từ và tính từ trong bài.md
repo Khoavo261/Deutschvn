@@ -1,4 +1,4 @@
-### **Bảng tổng hợp động từ và danh từ hay đi kèm**
+## **Bảng tổng hợp động từ và danh từ hay đi kèm**
 
 | **Động từ (Verben)** | **Nghĩa tiếng Việt** | **Danh từ hay đi kèm**       | **Ví dụ**                                    |
 | -------------------- | -------------------- | ---------------------------- | -------------------------------------------- |
@@ -18,7 +18,7 @@
 
 ---
 
-### **Tổng hợp tính từ và trạng từ**
+## **Tổng hợp tính từ và trạng từ**
 
 | **Tính từ/Trạng từ** | **Nghĩa tiếng Việt** | **Ví dụ**                              |
 | -------------------- | -------------------- | -------------------------------------- |
@@ -30,4 +30,6 @@
 | **noch einmal**      | một lần nữa          | Kannst du das noch einmal wiederholen? |
 
 ---
-`Hãy chắc chắn là bạn đã viết ra vở của mình. Ở cuối cùng của bài học mình có để các động từ và các danh từ phù hợp hay đi chung với các từ vựng trên. Nhưng trước tiên hãy bắt đầu với việc đặt câu trước nhé. Đây là một vài ví dụ khi mình học. `
+`:::tip
+**Hãy chắc chắn là bạn đã viết ra vở của mình. Ở cuối cùng của bài học mình có để các động từ và các danh từ phù hợp hay đi chung với các từ vựng trên. Nhưng trước tiên hãy bắt đầu với việc đặt câu trước nhé. Đây là một vài ví dụ khi mình học.**
+:::
