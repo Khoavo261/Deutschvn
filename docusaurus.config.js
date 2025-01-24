@@ -67,6 +67,10 @@ const config = {
           sidebarId: "a1niveau",
           position: "left",
           label: "A1 Niveau",
+          link: {
+            type: "doc",
+            id: "intro" // ID của tài liệu intro
+          },
         },
         {
           type: "docSidebar",
