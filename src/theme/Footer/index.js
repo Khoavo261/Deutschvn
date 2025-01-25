@@ -22,7 +22,6 @@ export default function Footer(props) {
             contactInfo={[
               { icon: faMapMarkerAlt, text: "Tp. Hồ Chí Minh, Việt Nam" },
               { icon: faEnvelope, text: "your-mail@docusaurus.io", href: "mailto:info@example.com" },
-              { icon: faPhone, text: "0123456789", href: "tel:+15555555555" },
             ]}
           />
         </div>

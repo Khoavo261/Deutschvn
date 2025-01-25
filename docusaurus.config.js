@@ -40,11 +40,9 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/Khoavo/Deutsch.vn/edit/main/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/Khoavo/Deutsch.vn/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
