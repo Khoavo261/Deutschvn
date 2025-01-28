@@ -165,6 +165,7 @@
   },
   "active": "37232d838cf6ce0b",
   "lastOpenFiles": [
+    "src/pages/baitap.js",
     "src/pages/demo/ubungA1/grammatik/bai10/index.js",
     "src/pages/demo/ubungA1/grammatik/bai9/index.js",
     "src/pages/demo/ubungA1/grammatik/bai1/\bindex.js",
@@ -175,7 +176,6 @@
     "src/pages/demo/ubungA1/grammatik/bai6/index.js",
     "src/pages/demo/ubungA1/grammatik/bai7/index.js",
     "src/pages/demo/ubungA1/grammatik/bai8/index.js",
-    "src/pages/demo/ubungA1/grammatik/bai7/intro.js",
     "build/de/images/use_as_template.png",
     "build/de/images/sync_change_git_codespace.png",
     "build/de/images/start_editting_simple_browser.png",

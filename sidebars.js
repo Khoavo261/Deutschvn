@@ -16,8 +16,7 @@ const sidebars = {
       collapsed: false,
       items: [
         {
-          type: 'link',
-          label: 'Batch 1',
+          type: 'link', label: 'Batch 1',
           href: '/demo/irregularverb/batch1', // Đường dẫn đến trang động
         },
         {
