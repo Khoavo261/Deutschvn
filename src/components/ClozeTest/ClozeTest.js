@@ -3,9 +3,7 @@ import "./ClozeTest.css";
 
 const ClozeTest = ({ sentences }) => {
   const [answers, setAnswers] = useState(
-    sentences.map((sentence) =>
-      sentence.gaps.map(() => "")
-    )
+    sentences.map((sentence) => sentence.gaps.map(() => ""))
   );
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
@@ -18,86 +16,93 @@ const ClozeTest = ({ sentences }) => {
 
   const checkAnswers = () => {
     let correct = 0;
-    const updatedAnswers = answers.map((sentenceAnswers, sentenceIndex) =>
-      sentenceAnswers.map((answer, gapIndex) => {
-        const isCorrect = answer.trim() === sentences[sentenceIndex].gaps[gapIndex];
-        if (isCorrect) correct++;
-        return answer;
-      })
-    );
-    setAnswers(updatedAnswers);
+    answers.forEach((sentenceAnswers, sentenceIndex) => {
+      sentenceAnswers.forEach((answer, gapIndex) => {
+        if (answer.trim() === sentences[sentenceIndex].gaps[gapIndex]) {
+          correct++;
+        }
+      });
+    });
     setScore(correct);
-  };
-
-  const showCorrectAnswers = () => {
-    setAnswers(
-      sentences.map((sentence) => sentence.gaps)
-    );
-    setShowResults(true);
+    setShowResults(true); // Hiển thị kết quả kiểm tra
   };
 
   const resetAnswers = () => {
-    setAnswers(
-      sentences.map((sentence) =>
-        sentence.gaps.map(() => "")
-      )
-    );
+    setAnswers(sentences.map((sentence) => sentence.gaps.map(() => "")));
     setScore(0);
     setShowResults(false);
   };
 
+  const revealCorrectAnswers = () => {
+    const filledAnswers = sentences.map((sentence) => sentence.gaps);
+    setAnswers(filledAnswers); // Điền thẳng đáp án đúng vào các ô
+    setShowResults(true); // Hiển thị kết quả
+  };
+
+  const maxScore = sentences.reduce((sum, sentence) => sum + sentence.gaps.length, 0);
+
   return (
     <div className="cloze-test">
+      <div className="progress-bar">
+        <div
+          className="progress"
+          style={{
+            width: `${(score / maxScore) * 100}%`,
+          }}
+        ></div>
+        <span className="progress-text">
+          {score}/{maxScore}
+        </span>
+      </div>
       <h2 className="test-title">Bài tập điền từ</h2>
-      {sentences.map((sentence, sentenceIndex) => (
-        <div key={sentenceIndex} className="sentence">
-          {sentence.text.map((part, index) => (
-            <React.Fragment key={index}>
-              {part}
-              {index < sentence.gaps.length && (
+      <table className="cloze-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Câu hỏi</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sentences.map((sentence, sentenceIndex) => (
+            <tr key={sentenceIndex}>
+              <td>{sentenceIndex + 1}</td>
+              <td>
+                {sentence.text[0]}
                 <input
                   type="text"
-                  value={answers[sentenceIndex][index]}
+                  value={answers[sentenceIndex][0]}
                   onChange={(e) =>
-                    handleChange(sentenceIndex, index, e.target.value)
+                    handleChange(sentenceIndex, 0, e.target.value)
                   }
                   className={`gap-input ${
                     showResults &&
-                    answers[sentenceIndex][index] !==
-                      sentences[sentenceIndex].gaps[index]
+                    answers[sentenceIndex][0] !== sentence.gaps[0]
                       ? "incorrect"
                       : ""
                   }`}
                 />
-              )}
-            </React.Fragment>
+                {sentence.text[1]}
+              </td>
+            </tr>
           ))}
-        </div>
-      ))}
+        </tbody>
+      </table>
       <div className="controls">
-        <button onClick={checkAnswers} className="btn-check">Kiểm tra</button>
-        <button onClick={showCorrectAnswers} className="btn-show">Xem kết quả</button>
-        <button onClick={resetAnswers} className="btn-reset">Làm lại</button>
+        <button onClick={checkAnswers} className="btn-check">
+          Kiểm tra
+        </button>
+        <button onClick={revealCorrectAnswers} className="btn-show">
+          Xem đáp án
+        </button>
+        <button onClick={resetAnswers} className="btn-reset">
+          Làm lại
+        </button>
       </div>
       <div className="score">
-        Điểm: {score} / {sentences.reduce((sum, sentence) => sum + sentence.gaps.length, 0)}
+        Điểm: {score} / {maxScore}
       </div>
     </div>
   );
 };
 
 export default ClozeTest;
-
-// Example usage
-// const sentences = [
-//   {
-//     text: ["Ich ", " bin Khoa."],
-//     gaps: ["bin"]
-//   },
-//   {
-//     text: ["Das ist ein ", " Hund, der ", " schwarz ist."],
-//     gaps: ["schöner", "sehr"]
-//   }
-// ];
-
-// <ClozeTest sentences={sentences} />
