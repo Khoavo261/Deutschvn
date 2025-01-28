@@ -164,7 +164,7 @@ const exercises = [
         { hint: "Ich spiele Fußball. (wollen)", correct: "Ich will Fußball spielen." },
         { hint: "Du hörst Radio. (dürfen)", correct: "Du darfst Radio hören." },
         { hint: "Er trinkt Wasser. (sollen)", correct: "Er soll Wasser trinken." },
-        { hint: "Wir lernen Grammatik. (müssen)", correct: "Wir müssen Grammatik lernen." },
+        { hint: "Wir lernen grammatikA1. (müssen)", correct: "Wir müssen grammatikA1 lernen." },
         { hint: "Ihr geht einkaufen. (können)", correct: "Ihr könnt einkaufen gehen." },
       ],
     },

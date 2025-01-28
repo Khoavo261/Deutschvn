@@ -4,7 +4,7 @@
 | -------------------- | -------------------- | ---------------------------- | -------------------------------------------- |
 | **schreiben**        | viết                 | der Text, die Information    | Ich schreibe einen Text.                     |
 | **studieren**        | học đại học          | die Universität, das Fach    | Sie studiert an der Universität Wien.        |
-| **üben**             | luyện tập            | die Grammatik, die Sprache   | Wir üben die Grammatik.                      |
+| **üben**             | luyện tập            | die grammatikA1, die Sprache   | Wir üben die grammatikA1.                      |
 | **betonen**          | nhấn mạnh            | die Silbe, das Wort          | Welche Silbe wird betont?                    |
 | **nachsprechen**     | nhắc lại             | den Satz, die Wörter         | Bitte sprechen Sie den Satz nach.            |
 | **ergänzen**         | bổ sung              | die Lücke, den Satz          | Ergänzen Sie den Satz.                       |
