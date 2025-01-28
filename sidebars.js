@@ -15,16 +15,56 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
-        'demo/irregularverb/batch1',
-        'demo/irregularverb/batch2',
-        'demo/irregularverb/batch3',
-        'demo/irregularverb/batch4',
-        'demo/irregularverb/batch5',
-        'demo/irregularverb/batch6',
-        'demo/irregularverb/batch7',
-        'demo/irregularverb/batch8',
-        'demo/irregularverb/batch9',
-        'demo/irregularverb/batch10',
+        {
+          type: 'link',
+          label: 'Batch 1',
+          href: '/demo/irregularverb/batch1', // Đường dẫn đến trang động
+        },
+        {
+          type: 'link',
+          label: 'Batch 2',
+          href: '/demo/irregularverb/batch2',
+        },
+        {
+          type: 'link',
+          label: 'Batch 3',
+          href: '/demo/irregularverb/batch3',
+        },
+        {
+          type: 'link',
+          label: 'Batch 4',
+          href: '/demo/irregularverb/batch4',
+        },
+        {
+          type: 'link',
+          label: 'Batch 5',
+          href: '/demo/irregularverb/batch5',
+        },
+        {
+          type: 'link',
+          label: 'Batch 6',
+          href: '/demo/irregularverb/batch6',
+        },
+        {
+          type: 'link',
+          label: 'Batch 7',
+          href: '/demo/irregularverb/batch7',
+        },
+        {
+          type: 'link',
+          label: 'Batch 8',
+          href: '/demo/irregularverb/batch8',
+        },
+        {
+          type: 'link',
+          label: 'Batch 9',
+          href: '/demo/irregularverb/batch9',
+        },
+        {
+          type: 'link',
+          label: 'Batch 10',
+          href: '/demo/irregularverb/batch10',
+        },
       ],
     },
     {
@@ -33,15 +73,51 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items: [
-        'demo/ubungA1/grammatik/bai1',
-        'demo/ubungA1/grammatik/bai2',
-        'demo/ubungA1/grammatik/bai3',
-        'demo/ubungA1/grammatik/bai4',
-        'demo/ubungA1/grammatik/bai5',
-        'demo/ubungA1/grammatik/bai6',
-        'demo/ubungA1/grammatik/bai7',
-        'demo/ubungA1/grammatik/bai8',
-        'demo/ubungA1/grammatik/bai9',
+        {
+          type: 'link',
+          label: 'Bài 1',
+          href: '/demo/ubungA1/grammatik/bai1',
+        },
+        {
+          type: 'link',
+          label: 'Bài 2',
+          href: '/demo/ubungA1/grammatik/bai2',
+        },
+        {
+          type: 'link',
+          label: 'Bài 3',
+          href: '/demo/ubungA1/grammatik/bai3',
+        },
+        {
+          type: 'link',
+          label: 'Bài 4',
+          href: '/demo/ubungA1/grammatik/bai4',
+        },
+        {
+          type: 'link',
+          label: 'Bài 5',
+          href: '/demo/ubungA1/grammatik/bai5',
+        },
+        {
+          type: 'link',
+          label: 'Bài 6',
+          href: '/demo/ubungA1/grammatik/bai6',
+        },
+        {
+          type: 'link',
+          label: 'Bài 7',
+          href: '/demo/ubungA1/grammatik/bai7',
+        },
+        {
+          type: 'link',
+          label: 'Bài 8',
+          href: '/demo/ubungA1/grammatik/bai8',
+        },
+        {
+          type: 'link',
+          label: 'Bài 9',
+          href: '/demo/ubungA1/grammatik/bai9',
+        },
       ],
     },
   ],
