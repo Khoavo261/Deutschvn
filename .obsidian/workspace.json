@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/a2niveau/Grammatik/12. um ... zu.md",
+                "file": "docs/a2niveau/IntroA2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12. um ... zu"
+              "title": "IntroA2"
             }
           }
         ]
@@ -165,6 +165,11 @@
   },
   "active": "d1dc50cc1bcd7e0e",
   "lastOpenFiles": [
+    "docs/a2niveau/Grammatik/12. um ... zu.md",
+    "docs/a2niveau/Vokabular/Leben und Lernen",
+    "docs/a2niveau/Grammatik/10. Konditionala2.md",
+    "docs/a2niveau/Grammatik/11. Präteritum và Perfekt.md",
+    "docs/a2niveau/Grammatik/1. Präsens-Perfekt-FuturI.md",
     "src/pages/grammatikA2/bai12/index.js",
     "src/pages/grammatikA2/bai12",
     "build/docs/b2niveau/Grammatik/Konditionalsätze/index.html",
@@ -174,8 +179,6 @@
     "build/index.html",
     "build/docs/b2niveau/Grammatik/Futur II/index.html",
     "build/docs/b2niveau/Grammatik/Futur II",
-    "build/docs/b2niveau/Grammatik/PassivPerfektPassivKonjunktivII/index.html",
-    "build/docs/b2niveau/Grammatik/Nominalsätze/index.html",
     "build/img/undraw_docusaurus_tree.svg",
     "build/img/undraw_docusaurus_react.svg",
     "build/img/undraw_docusaurus_mountain.svg",
@@ -192,18 +195,14 @@
     "build/assets/images/html-css-demonstration-3f74d516d5742b0635de07b809c558d7.png",
     "build/assets/images/gist_embed_guide-fa6385e8da62e3a781e7a37c64ed0d90.png",
     "docs/a2niveau/Grammatik/8. WicktigeSatza2.md",
-    "docs/a2niveau/Grammatik/12. um ... zu.md",
     "docs/a2niveau/Grammatik/9. Konjunktionena2.md",
     "docs/a2niveau/Grammatik/7. PassivPräsensa2.md",
-    "docs/a2niveau/Grammatik/11. Präteritum và Perfekt.md",
-    "docs/a2niveau/Grammatik/10. Konditionala2.md",
     "docs/a2niveau/Grammatik/3. Verbena2.md",
     "docs/a2niveau/Grammatik/6. KomparativundSuperlativa2.md",
     "docs/a2niveau/Grammatik/4.  Possesiva2.md",
     "docs/a2niveau/Grammatik/5. Präpositionena2.md",
     "docs/a2niveau/Grammatik/2. Nebensätzea2.md",
     "docs/a1niveau/Grammatik/10. Hauptsätze verbinden.md",
-    "docs/a2niveau/Grammatik/1. Präsens-Perfekt-FuturI.md",
     "docs/a2niveau/IntroA2.md",
     "docs/a1niveau/intro.md",
     "node_modules/node-forge/README.md",
