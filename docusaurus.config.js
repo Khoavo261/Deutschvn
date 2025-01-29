@@ -97,11 +97,11 @@ const config = {
           label: 'B2 Niveau',
           position: 'left',
         },
-        {
-          to: '/blog',
-          label: 'Blog',
-          position: 'left',
-        },
+        // {
+        //   to: '/blog',
+        //   label: 'Blog',
+        //   position: 'left',
+        // },
         {
           label: 'Bài Tập',
           position: 'left',
@@ -157,6 +157,7 @@ const config = {
         //   className: 'navbar-icon fab fa-github',
         //   'aria-label': 'GitHub',
         // },
+  
       ],
     },
     footer: {
@@ -184,6 +185,7 @@ const config = {
           ],
         },
       ],
+      copyright: `Copyright © ${new Date().getFullYear()} Awesome Docusaurus, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
