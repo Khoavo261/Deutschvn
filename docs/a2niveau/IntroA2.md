@@ -1,4 +1,9 @@
-# 0. Giới thiệu về ngữ pháp A2
+--- 
+id: intro 
+sidebar_position: 1
+
+---
+# Giới thiệu về ngữ pháp A2
 
 Trình độ **A2** trong tiếng Đức là một bước phát triển quan trọng sau A1, giúp người học mở rộng nền tảng ngôn ngữ và chuẩn bị tốt hơn cho giao tiếp hàng ngày. Tại mức này, bạn sẽ làm quen với các điểm ngữ pháp phức tạp hơn, sử dụng linh hoạt các thì và hiểu cách xây dựng câu đa dạng hơn để biểu đạt ý tưởng rõ ràng và chính xác hơn.
 
