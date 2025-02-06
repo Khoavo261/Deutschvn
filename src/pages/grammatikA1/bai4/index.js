@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from '@theme/Layout';
 import ClozeTest from "@site/src/components/ClozeTest/ClozeTest";
 import RewriteTest from "@site/src/components/RewriteTest/RewriteTest";
 
