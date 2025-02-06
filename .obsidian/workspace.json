@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/b1niveau/12 chủ đề thường nhật trong tiếng Đức cùng với 5 từ vựng trình độ B1.md",
+                "file": "docs/a1niveau/Grammatik/1. Konjugation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12 chủ đề thường nhật trong tiếng Đức cùng với 5 từ vựng trình độ B1"
+              "title": "1. Konjugation"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -163,34 +164,36 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "37232d838cf6ce0b",
+  "active": "d1dc50cc1bcd7e0e",
   "lastOpenFiles": [
+    "docs/a1niveau/Grammatik/2.  Wfragen.md",
+    "docs/a1niveau/Vokabular/3. Sprache im Kurs/2. Mit Wörterbüchern arbeiten.md",
+    "docs/b1niveau/12 chủ đề thường nhật trong tiếng Đức cùng với 5 từ vựng trình độ B1.md",
     "build/index.html",
-    "build/docs/b1niveau/Vokabular/Priorität 1/Wörter - Spiele - Training/index.html",
-    "build/docs/b1niveau/Vokabular/Priorität 1/TrainingBeruf1/index.html",
-    "build/docs/a1niveau/Vokabular/Station 1/Worter-Spiele-Training/index.html",
-    "build/docs/a1niveau/Vokabular/Station 1/Themen und Texte/index.html",
-    "build/docs/a1niveau/Vokabular/Station 1/Filmstation/index.html",
-    "build/docs/a1niveau/Vokabular/Station 1/Berufsbilder/index.html",
-    "build/docs/a1niveau/Vokabular/Start auf Deutsch/Tổng hợp động từ và tính từ trong bài/index.html",
-    "build/docs/a1niveau/Vokabular/Start auf Deutsch/Start/index.html",
-    "build/docs/a1niveau/Vokabular/Start auf Deutsch/Internationale Wörter/index.html",
-    "build/docs/a1niveau/Vokabular/Start auf Deutsch/Im Deutschkurz/index.html",
-    "build/img/undraw_docusaurus_tree.svg",
-    "build/img/undraw_docusaurus_react.svg",
-    "build/img/undraw_docusaurus_mountain.svg",
-    "build/img/logo.svg",
-    "build/img/docusaurus.png",
-    "build/img/docusaurus-social-card.jpg",
-    "build/img/avt.png",
-    "build/img/avt.jpeg",
+    "build/docs/a2niveau/Grammatik/Konditionala2/index.html",
+    "build/docs/a2niveau/Grammatik/Konditionala2",
+    "build/docs/a2niveau/Grammatik/Konjunktionena2/index.html",
+    "build/docs/a2niveau/Grammatik/Konjunktionena2",
+    "build/docs/b1niveau/Grammatik/Konditionalsätze/index.html",
+    "build/docs/b1niveau/Grammatik/Konditionalsätze",
+    "build/docs/b2niveau/Grammatik/infoB2/index.html",
+    "build/docs/b2niveau/Grammatik/Verbformen/index.html",
+    "build/docs/b2niveau/Grammatik/VerbenmitPräpositionen/index.html",
     "build/templates/youtube.md",
     "build/templates/new post.md",
     "build/templates/new post no yaml.md",
     "build/templates/metadata.md",
     "build/templates/image.md",
-    "build/assets/images/html-css-demonstration-3f74d516d5742b0635de07b809c558d7.png",
-    "build/assets/images/gist_embed_guide-fa6385e8da62e3a781e7a37c64ed0d90.png",
+    "build/images/use_as_template.png",
+    "build/images/sync_change_git_codespace.png",
+    "build/images/start_editting_simple_browser.png",
+    "build/images/open_codespaces.png",
+    "build/images/html-css-demonstration.png",
+    "build/images/html-css-demonstration copy.png",
+    "build/images/gtm_step-1_mo_ta_website.png",
+    "build/images/google-font-ui.png",
+    "build/images/git_pull_terminal.png",
+    "build/images/gist_embed_guide.png",
     "docs/a2niveau/IntroA2.md",
     "docs/a1niveau/Vokabular/5. Station 1/4. Filmstation.md",
     "docs/a1niveau/Vokabular/5. Station 1/3. Worter-Spiele-Training.md",
@@ -202,9 +205,7 @@
     "docs/a1niveau/Vokabular/4. Stadte-Lander-Sprachen/3. Warst du schon in...md",
     "docs/a1niveau/Vokabular/4. Stadte-Lander-Sprachen/2. Menschen, Stadte Sprachen.md",
     "docs/a1niveau/Vokabular/4. Stadte-Lander-Sprachen/1. Sehenswurdigkeiten in Europa.md",
-    "docs/b1niveau/12 chủ đề thường nhật trong tiếng Đức cùng với 5 từ vựng trình độ B1.md",
     "docs/a1niveau/Vokabular/3. Sprache im Kurs/4. Menschen, Kurse, Sprachen..md",
-    "docs/a1niveau/Vokabular/3. Sprache im Kurs/2. Mit Wörterbüchern arbeiten.md",
     "docs/a1niveau/Vokabular/3. Sprache im Kurs/1. Worter und Fragen.md",
     "docs/a1niveau/Vokabular/3. Sprache im Kurs/5. Übung.md",
     "docs/a1niveau/Vokabular/3. Sprache im Kurs/3. Ist das ein..md",
