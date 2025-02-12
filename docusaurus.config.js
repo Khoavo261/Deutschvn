@@ -84,10 +84,16 @@ const config = {
         },
         {
           type: "docSidebar",
-          sidebarId: "b2niveau",
+          sidebarId: "hoso",
           position: "left",
-          label: "B2 Niveau",
+          label: "Du học Áo - Đức",
         },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "b2niveau",
+        //   position: "left",
+        //   label: "B2 Niveau",
+        // },
         {
           label: 'Bài Tập', // Thêm mục "Thư viện mẫu"
           position: 'left',
