@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "content-5ebdf",
-    "build": "content-5ebdf"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "content-5ebdf"
+  }
 }
