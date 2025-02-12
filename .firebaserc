@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "deutch-5e3f5",
-    "build": "deutch-5e3f5"
+    "default": "content-5ebdf",
+    "build": "content-5ebdf"
   },
   "targets": {},
   "etags": {}
