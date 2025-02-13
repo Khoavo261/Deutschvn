@@ -1,4 +1,4 @@
-# **Hướng dẫn du học Đức hệ Học Nghề (Ausbildung)**
+# Hướng dẫn du học Đức hệ Học Nghề (Ausbildung)
 
 **Lần cập nhật gần nhất:** 12/02/2025  
 _(Bài viết này sẽ được cập nhật theo từng kỳ học.)_

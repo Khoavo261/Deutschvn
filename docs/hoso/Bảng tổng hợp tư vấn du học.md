@@ -1,4 +1,4 @@
-# **Bảng tổng hợp tư vấn du học**
+# Bảng tổng hợp tư vấn du học
 
 **Lần cập nhật gần nhất:** 12/02/2025  
 _(Bảng này giúp phụ huynh và học sinh dễ dàng xác định loại hình du học phù hợp.)_

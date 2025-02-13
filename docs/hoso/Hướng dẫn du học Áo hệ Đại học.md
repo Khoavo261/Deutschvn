@@ -1,4 +1,4 @@
-# **Hướng dẫn du học Áo hệ Đại học**
+# Hướng dẫn du học Áo hệ Đại học
 
 **Lần cập nhật gần nhất:** 10/08/2021  
 _(Bài viết này sẽ được cập nhật theo từng kỳ học.)_
