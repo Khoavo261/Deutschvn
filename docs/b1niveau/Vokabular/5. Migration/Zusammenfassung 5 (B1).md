@@ -1,3 +1,4 @@
+
 ## **🔹 Động từ (Verben)**
 
 |**Từ vựng**|**Phiên âm**|**Nghĩa tiếng Việt**|

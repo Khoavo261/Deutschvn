@@ -1,4 +1,3 @@
-# Hướng dẫn du học Đức hệ Đại học
 
 **Lần cập nhật gần nhất:** 12/02/2025  
 _(Bài viết này sẽ được cập nhật theo từng kỳ học.)_
